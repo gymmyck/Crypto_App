@@ -7,3 +7,5 @@ export default function Coin({ params }: { params: { coinId: string } }) {
       </main>
   );
 }
+
+console.log('my code from the branch');
