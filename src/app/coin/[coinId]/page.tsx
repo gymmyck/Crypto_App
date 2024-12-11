@@ -9,3 +9,4 @@ export default function Coin({ params }: { params: { coinId: string } }) {
 }
 
 console.log('my code from the branch');
+console.log('new line');
