@@ -5,7 +5,7 @@ export default function RootLayout({
 }>) {
     return (
         <div>
-                <div style={{ height: '100px', background: 'green' }}></div>
+                <div style={{ height: '100px', background: '#456' }}></div>
                 {children}
         </div>
     );

@@ -30,12 +30,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div style={{ height: '100px', background: 'red' }}>
+        <div style={{ height: '100px', background: '#345' }}>
           <div>
+            <Link href="/home">Home</Link>
             <Link href="/portfolio">Portfolio</Link>
-            <Link href="/dashboard/analytics">Analytics</Link>
-            <Link href="/dashboard/settings/profile">Profile</Link>
-            <Link href="/dashboard/settings/password">Password</Link>
           </div>
 
           <Navbar />
