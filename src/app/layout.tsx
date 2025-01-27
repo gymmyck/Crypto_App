@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+import { useState } from 'react';
+import Link from 'next/link'
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "./components/Navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,11 +26,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <div style={{ height: '100px', background: 'red' }}>
+          <div>
+            <Link href="/portfolio">Portfolio</Link>
+            <Link href="/dashboard/analytics">Analytics</Link>
+            <Link href="/dashboard/settings/profile">Profile</Link>
+            <Link href="/dashboard/settings/password">Password</Link>
+          </div>
+
+          <Navbar />
+        </div>
         {children}
       </body>
     </html>
