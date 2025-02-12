@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { useState } from 'react';
-import Link from 'next/link'
+// import { useState } from 'react';
+import Link from "next/link";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
@@ -26,11 +26,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // const a = 9;
 
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div style={{ height: '100px', background: '#345' }}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <div style={{ height: "100px", background: "#345" }}>
           <div>
             <Link href="/home">Home</Link>
             <Link href="/portfolio">Portfolio</Link>

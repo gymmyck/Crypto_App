@@ -1,12 +1,12 @@
 export default function RootLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-    return (
-        <div>
-                <div style={{ height: '100px', background: 'orange' }}></div>
-                {children}
-        </div>
-    );
+  return (
+    <div>
+      <div style={{ height: "100px", background: "orange" }}></div>
+      {children}
+    </div>
+  );
 }
